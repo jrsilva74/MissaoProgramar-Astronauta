@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Missão Jupiter</title>
+</head>
+<body>
+    <script>
+    var segundosQtd = window.prompt("Digite a quantidade de segundos para converter:");
+    var minutos = Math.floor(segundosQtd / 60);
+    var restoSegundos = segundosQtd % 60;
+        if(restoSegundos < 10){
+            restoSegundos = "0" + restoSegundos;    
+        }
+    var horas = Math.floor(minutos / 60);
+        if(horas < 10){
+            horas = "0" + horas;
+        }
+            for(minutos = minutos; minutos >= 60; minutos){
+                minutos = minutos - 60;
+            }
+            if(minutos < 10){
+            minutos = "0" + minutos;
+        }
+    document.write(horas + ":" + minutos + ":" + restoSegundos);
+                   
+    </script>
+</body>
+</html> 
