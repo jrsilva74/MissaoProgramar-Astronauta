@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missão MakeMake</title>
+</head>
+<body>
+    <script>
+        nota1 = parseInt(window.prompt("Digite a 1ª nota do aluno:"));
+        nota2 = parseInt(window.prompt("Digite a 2ª nota do aluno:"));
+        var media = (nota1 + nota2) / 2;
+        document.write(media + "<br>");
+            if(media == 10){
+                document.write("Aprovado com Distinção.");
+            }
+            else if(media > 7 && media < 10){
+                document.write("Aprovado.");
+            }
+            else{
+                document.write("Reprovado.");
+            }
+    </script>
+</body>
+</html>
