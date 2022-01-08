@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Missão Mercurio</title>
+</head>
+<body>
+    <script>
+        var salario = parseInt(window.prompt("Digite o seu salário:"));
+            if(salario < 281){
+                var aumento = (salario * 20) / 100;
+                var novoSalario = aumento + salario;
+                document.write("Salário anterior: R$" + salario + ",00.<br>" +
+                               "Houve um aumento de 20% <br>" + 
+                               "Valor do aumento: R$" + aumento + ",00.<br>" +
+                               "Salário com aumento: R$" + novoSalario + ",00.");
+            }
+            else if(salario > 280 && salario < 701){
+                var aumento = (salario * 15) / 100;
+                var novoSalario = aumento + salario;
+                document.write("Salário anterior: R$" + salario + ",00.<br>" +
+                               "Houve um aumento de 15% <br>" + 
+                               "Valor do aumento: R$" + aumento + ",00.<br>" +
+                               "Salário com aumento: R$" + novoSalario + ",00.");
+            }
+            else if(salario > 700 && salario < 1501){
+                var aumento = (salario * 10) / 100;
+                var novoSalario = aumento + salario;
+                document.write("Salário anterior: R$" + salario + ",00.<br>" +
+                               "Houve um aumento de 10% <br>" + 
+                               "Valor do aumento: R$" + aumento + ",00.<br>" +
+                               "Salário com aumento: R$" + novoSalario + ",00.");
+            }
+            else if(salario > 1500){
+                var aumento = (salario * 5) / 100;
+                var novoSalario = aumento + salario;
+                document.write("Salário anterior: R$" + salario + ",00.<br>" +
+                               "Houve um aumento de 5% <br>" + 
+                               "Valor do aumento: R$" + aumento + ",00.<br>" +
+                               "Salário com aumento: R$" + novoSalario + ",00.");
+            }
+    </script>
+</body>
+</html>
