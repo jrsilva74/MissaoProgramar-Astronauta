@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missão Éris</title>
+</head>
+<body>
+    <script>
+        contador = 0;
+        for(i=1; i<6; i++){
+            if(i==1){
+                resposta = parseInt(window.prompt("Telefonou para a vítima?" + "\n"
+                                        + "Digite 1 para SIM" + "\n"
+                                        + "Digite 0 para NÃO"));
+                                        if(resposta > 1){
+                                           i = i - 1;
+                                           contador = contador - resposta;
+                                        }
+            }
+            if(i==2){
+                resposta = parseInt(window.prompt("Esteve no local do crime?" + "\n"
+                                        + "Digite 1 para SIM" + "\n"
+                                        + "Digite 0 para NÃO"));
+                                        if(resposta > 1){
+                                           i = i - 1;
+                                           contador = contador - resposta;
+                                        }
+            }
+            if(i==3){
+                resposta = parseInt(window.prompt("Mora perto da vítima?" + "\n"
+                                        + "Digite 1 para SIM" + "\n"
+                                        + "Digite 0 para NÃO"));
+                                        if(resposta > 1){
+                                           i = i - 1;
+                                           contador = contador - resposta;
+                                        }
+            }
+            if(i==4){
+                resposta = parseInt(window.prompt("Devia para a vítima?" + "\n"
+                                        + "Digite 1 para SIM" + "\n"
+                                        + "Digite 0 para NÃO"));
+                                        if(resposta > 1){
+                                           i = i - 1;
+                                           contador = contador - resposta;
+                                        }
+            }
+            if(i==5){
+                resposta = parseInt(window.prompt("Já trabalhou com a vítima?" + "\n"
+                                        + "Digite 1 para SIM" + "\n"
+                                        + "Digite 0 para NÃO"));
+                                        if(resposta > 1){
+                                           i = i - 1;
+                                           contador = contador - resposta;
+                                        }
+            }
+            contador = contador + resposta
+        }
+                if(contador == 2){
+                    document.write("Suspeita");
+                }
+                else if(contador > 2 && contador < 5){
+                    document.write("Cúmplice");
+                }
+                else if(contador == 5){
+                    document.write("Assassino");
+                }
+                else{
+                    document.write("Inocente");
+                }
+    </script>
+</body>
+</html>
