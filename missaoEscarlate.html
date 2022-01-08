@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missão Escarlate</title>
+</head>
+<body>
+    <script>
+        produto = new Array();
+        for(i=1; i<4; i++){
+            produto[i] = window.prompt("Digite o valor do " + i + "° produto:")
+        }
+            if(produto[1] < produto[3] && produto[1] < produto[2]){
+                document.write("Compre o produto 1.");
+            }
+            else if(produto[2] < produto[3] && produto[2] < produto[1]){
+                document.write("Compre o produto 2.");
+            }
+            else{
+                document.write("Compre o produto 3.");
+            }
+    </script>
+</body>
+</html>
