@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missão XO-3B</title>
+</head>
+<body>
+    <script>
+        vogal = "aeiouAEIOU";
+        cont = 0;
+        letra = window.prompt("Digite uma letra do alfabeto: ");
+            for(i=0; i<10; i++){
+                if(vogal.charAt(i) == letra){
+                document.write(letra + " é uma vogal.<br>");
+                }
+                else{
+                    cont = cont + 1;
+                }
+            }
+                if(cont == 10){
+                    document.write(letra + " não é uma vogal.<br>");
+                }
+    </script>
+</body>
+</html>
