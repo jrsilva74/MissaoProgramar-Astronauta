@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missão XO-5</title>
+</head>
+<body>
+    <script>
+        msg = window.prompt("Digite uma palavra ou frase: ");
+        x = msg.length;
+        words = new Array();
+            for(i=0; i< x; i++){
+                words[i] = msg.charAt(i);
+            }
+                i = x - 1;
+                document.write("String reversa: ");
+                while(i >= 0){
+                    document.write(words[i]);
+                    i = i -1;
+                }
+    </script>
+</body>
+</html>
